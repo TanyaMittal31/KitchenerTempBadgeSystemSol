@@ -4,10 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KitchenerTempBadgeSystem.PL", "KitchenerTempBadgeSystem.PL\KitchenerTempBadgeSystem.PL.csproj", "{D90ADDB2-A77B-46E9-AA4B-5BE3B2F2875D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21D8BE74-2684-4419-A537-86FFEE924315} = {21D8BE74-2684-4419-A537-86FFEE924315}
+		{C49853A6-56AA-41EC-ACD5-E10FCC168A75} = {C49853A6-56AA-41EC-ACD5-E10FCC168A75}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Layer", "DataAccess.Layer\DataAccess.Layer.csproj", "{C49853A6-56AA-41EC-ACD5-E10FCC168A75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.Layer", "DataAccess.Layer\DataAccess.Layer.csproj", "{C49853A6-56AA-41EC-ACD5-E10FCC168A75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.Layer", "Business.Layer\Business.Layer.csproj", "{21D8BE74-2684-4419-A537-86FFEE924315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Layer", "Business.Layer\Business.Layer.csproj", "{21D8BE74-2684-4419-A537-86FFEE924315}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C49853A6-56AA-41EC-ACD5-E10FCC168A75} = {C49853A6-56AA-41EC-ACD5-E10FCC168A75}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
